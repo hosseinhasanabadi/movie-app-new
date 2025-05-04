@@ -2,21 +2,12 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import user from "../assets/user.png";
 import { Link, NavLink, useNavigate } from "react-router";
+import { navigation } from "../constants/navigation";
 import { CiSearch } from "react-icons/ci";
 
 function Header() {
   const [searchInput, setSearchInput] = useState("");
   const navigat = useNavigate();
-  const navigation = [
-    {
-      label: "Tv show",
-      href: "tv",
-    },
-    {
-      label: "Movies",
-      href: "movies",
-    },
-  ];
 
   useEffect(() => {
     navigat(`/search?q=${searchInput}`);
