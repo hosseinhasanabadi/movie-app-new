@@ -1,11 +1,9 @@
 import React from 'react'
+import BannerHome from './../components/BannerHome';
 const Home = () => {
   return (
     <div>
-      <div className="text-red-500 text-3xl ml-10">
-  Hello Tailwind
-</div>
-
+  <BannerHome/>
     </div>
   )
 }

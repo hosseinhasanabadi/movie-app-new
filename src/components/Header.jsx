@@ -21,7 +21,7 @@ function Header() {
     e.preventDefault();
   };
   return (
-    <header className="fixed top-0 h-16 w-full  bg-neutral-600/75">
+    <header className="fixed top-0 h-16 w-full z-40 bg-neutral-600/75">
       <div className="container mx-auto px-2 ml-3  flex items-center   h-full ">
         <Link to={"/"} className="flex items-center gap-5 ml-5">
           <img className="ml-5" src={logo} alt="logo" width={120} />
